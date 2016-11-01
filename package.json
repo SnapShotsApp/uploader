@@ -1,0 +1,15 @@
+{
+  "name": "snapshots-uploader",
+  "version": "0.0.1",
+  "description": "Snapshots Uploader desktop app",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/SnapShotsApp/uploader.git",
+    "type": "git"
+  },
+  "author": "Josh Lindsey <josh@snapshots.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^1.4.4"
+  }
+}
