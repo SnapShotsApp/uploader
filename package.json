@@ -11,5 +11,10 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "electron": "^1.4.4"
+  },
+  "dependencies": {
+    "axios": "^0.15.2",
+    "knex": "^0.12.6",
+    "sqlite3": "^3.1.8"
   }
 }
