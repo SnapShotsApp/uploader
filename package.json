@@ -14,6 +14,7 @@
     "npm": ">=3.x"
   },
   "scripts": {
+    "lint": "eslint --ignore-path .gitignore --format=node_modules/eslint-formatter-pretty app test *.js",
     "hot-server": "cross-env NODE_ENV=development node --max_old_space_size=2096 -r babel-register server.js",
     "start": "cross-env NODE_ENV=production electron ./app/",
     "start-hot": "cross-env HOT=1 NODE_ENV=development electron -r babel-register -r babel-polyfill ./app/main.development",
@@ -87,8 +88,11 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-react": "^6.4.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "fbjs-scripts": "^0.7.1",
     "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
     "json-loader": "^0.5.4",
     "minimist": "^1.2.0",
     "node-sass": "^3.10.1",
@@ -104,6 +108,7 @@
   },
   "dependencies": {
     "axios": "^0.15.2",
+    "electron-debug": "^1.0.1",
     "knex": "^0.12.6",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",

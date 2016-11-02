@@ -4,8 +4,9 @@ extends: airbnb
 
 env:
   browser: true
-  mocha: true
   node: true
+  amd: true
+  commonjs: true
 
 rules:
   arrow-parens: 
@@ -15,7 +16,7 @@ rules:
   generator-star-spacing: off
   import/no-unresolved:
     - error
-    - ignore: 
+    - ignore:
         - electron
   import/no-extraneous-dependencies: off
   no-use-before-define: off
@@ -24,9 +25,9 @@ rules:
   promise/catch-or-return: 2
   promise/no-native: 0
   react/jsx-no-bind: off
-  react/jsx-filename-extension: 
-    - error 
-    - extensions: 
+  react/jsx-filename-extension:
+    - error
+    - extensions:
         - .js
         - .jsx
   react/prefer-stateless-function: off
@@ -41,6 +42,6 @@ plugins:
 settings:
   import/resolver:
     webpack:
-      config: webpack/eslint.js
+      config: /Users/jlindsey/projects/snapshots/uploader/webpack/eslint.js
 ...
 

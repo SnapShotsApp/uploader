@@ -150,3 +150,6 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+
+# User-specific local vars
+.dir-locals.el
