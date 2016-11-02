@@ -1,0 +1,14 @@
+{
+  "name": "Snapshots",
+  "productName": "Snapshots",
+  "version": "0.0.1",
+  "main": "./main.js",
+  "author": {
+    "name": "Josh Lindsey",
+    "email": "josh@snapshots.com"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "source-map-support": "^0.4.6"
+  }
+}
