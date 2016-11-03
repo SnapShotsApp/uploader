@@ -3,9 +3,10 @@
 import webpack from 'webpack';
 import validate from 'webpack-validator';
 import merge from 'webpack-merge';
+import path from 'path';
 import baseConfig from './base';
 
-const port = process.env.PORT || 3308;
+const port = 3308;
 
 export default validate(merge(baseConfig, {
   debug: true,
@@ -15,7 +16,7 @@ export default validate(merge(baseConfig, {
   entry: [
     `webpack-hot-middleware/client?path=http://localhost:${port}/__webpack_hmr`,
     'babel-polyfill',
-    './app/index'
+    path.join('src', 'index')
   ],
 
   output: {

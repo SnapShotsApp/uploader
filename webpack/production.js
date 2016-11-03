@@ -5,6 +5,7 @@ import validate from 'webpack-validator';
 import merge from 'webpack-merge';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import path from 'path';
 import baseConfig from './base';
 
 export default validate(merge(baseConfig, {
@@ -13,11 +14,11 @@ export default validate(merge(baseConfig, {
 
   entry: [
     'babel-polyfill',
-    './app/index'
+    './src/index'
   ],
 
   output: {
-    publicPath: '../dist/'
+    publicPath: 'out/'
   },
 
   module: {
@@ -61,8 +62,8 @@ export default validate(merge(baseConfig, {
     }),
     new ExtractTextPlugin('style.css', { allChunks: true }),
     new HtmlWebpackPlugin({
-      filename: 'app.html',
-      template: 'app/app.html',
+      filename: 'index.html',
+      template: path.join(__dirname, '..', 'src', 'index.html'),
       inject: false
     })
   ]

@@ -1,13 +1,25 @@
 {
   "name": "Snapshots",
-  "productName": "Snapshots",
+  "description": "Snapshots Event Management tool",
   "version": "0.0.1",
-  "main": "./main.js",
+  "main": "./out/main.js",
+  "license": "Apache-2.0",
+  "private": true,
   "author": {
     "name": "Josh Lindsey",
     "email": "josh@snapshots.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SnapShotsApp/uploader.git"
+  },
   "dependencies": {
+    "axios": "^0.15.2",
+    "electron-debug": "^1.0.1",
+    "knex": "^0.12.6",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "sqlite3": "^3.1.8",
     "font-awesome": "^4.7.0",
     "source-map-support": "^0.4.6"
   }

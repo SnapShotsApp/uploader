@@ -7,12 +7,11 @@ import baseConfig from './base';
 
 export default validate(merge(baseConfig, {
   devtool: 'source-map',
-  entry: ['babel-polyfill', './app/main.development'],
+  entry: ['babel-polyfill', './src/main.development.js'],
   target: 'electron-main',
 
   output: {
-    path: __dirname,
-    filename: './app/main.js'
+    filename: 'main.js'
   },
 
   plugins: [

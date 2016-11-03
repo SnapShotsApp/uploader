@@ -2,6 +2,7 @@ import path from 'path';
 import validate from 'webpack-validator';
 
 export default validate({
+  context: path.join(__dirname, '..'),
   module: {
     loaders: [
       {
@@ -17,7 +18,7 @@ export default validate({
   },
 
   output: {
-    path: path.join(__dirname, 'app'),
+    path: 'app/out',
     filename: 'bundle.js',
     libraryTarget: 'commonjs2'
   },

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Snapshots</title>
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../app/node_modules/font-awesome/css/font-awesome.min.css" />
 
         <script>
          (function() {
@@ -21,7 +21,7 @@
         <script>
          {
              const script = document.createElement('script');
-             const port = process.env.PORT || 3308;
+             const port = 3308;
              script.src = (process.env.HOT)
                         ? 'http://localhost:' + port + '/dist/bundle.js'
                         : './bundle.js';

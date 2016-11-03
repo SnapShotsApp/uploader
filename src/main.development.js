@@ -15,10 +15,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 if (process.env.NODE_ENV === 'development') {
-  require('electron-debug')();
-
   const p = path.join(__dirname, '..', 'app', 'node_modules');
   require('module').globalPaths.push(p);
+  require('electron-debug')();
 }
 
 app.on('window-all-closed', () => {
@@ -53,7 +52,7 @@ app.on('ready', async () => {
     height: 768
   });
 
-  mainWindow.loadURL(`file://${__dirname}/app.html`);
+  mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   mainWindow.webContents.on('did-finish-load', () => {
     mainWindow.show();
